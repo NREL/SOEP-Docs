@@ -1,0 +1,10 @@
+target/
+.idea/workspace.xml
+.idea/tasks.xml
+*.json
+*.sh
+out/
+lib/
+maven_repository/
+MSL/
+MBL/

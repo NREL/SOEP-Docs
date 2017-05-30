@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="mbl-parser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mbl_parser_jar</output-path>
+    <root id="archive" name="mbl-parser.jar">
+      <element id="module-output" name="mbl-parser" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/beaver/beaver-rt/0.9.6.1/beaver-rt-0.9.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jmodelica/optimica-compiler/2.0/optimica-compiler-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jmodelica/modelica-compiler/2.0/modelica-compiler-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/beust/jcommander/1.69/jcommander-1.69.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jmodelica/util/2.0/util-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jmodelica/separate-process/2.0/separate-process-2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

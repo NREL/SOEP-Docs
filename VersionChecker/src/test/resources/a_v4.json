@@ -1,0 +1,27 @@
+{
+  "Buildings.Example.A": {
+    "name": "Buildings.Example.A",
+    "qualifiers": [
+      "model"
+    ],
+    "components": [
+      {
+        "className": "Boolean",
+        "qualifiers": [
+          "parameter"
+        ],
+        "name": "allowFlowReversal",
+        "value": "true"
+      },
+      {
+        "className": "Boolean",
+        "qualifiers": [
+          "parameter"
+        ],
+        "name": "aNewVariable",
+        "comment": "This new variable has no default; backwards incompatible change!"
+      }
+    ]
+  }
+}
+

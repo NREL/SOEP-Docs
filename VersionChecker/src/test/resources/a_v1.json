@@ -1,0 +1,19 @@
+{
+  "Buildings.Example.A": {
+    "name": "Buildings.Example.A",
+    "qualifiers": [
+      "model"
+    ],
+    "components": [
+      {
+        "className": "Boolean",
+        "qualifiers": [
+          "parameter"
+        ],
+        "name": "allowFlowReversal",
+        "value": "true"
+      }
+    ]
+  }
+}
+

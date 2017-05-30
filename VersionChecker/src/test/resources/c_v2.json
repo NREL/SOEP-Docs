@@ -1,0 +1,30 @@
+{
+    "Buildings.Fluid.Movers.FlowControlled_m_flow": {
+        "name": "Buildings.Fluid.Movers.FlowControlled_m_flow",
+        "comment": "Fan or pump with ideally controlled mass flow rate as input signal",
+        "qualifiers": [
+            "model"
+        ],
+        "components": [
+            {
+                "className": "Modelica.Blocks.Interfaces.RealInput",
+                "name": "mass_flow_in",
+                "comment": "Prescribed mass flow rate",
+                "modifications": [
+                    {
+                        "name": "unit",
+                        "qualifiers": [
+                            "final"
+                        ],
+                        "value": "\"kg/s\""
+                    },
+                    {
+                        "name": "nominal",
+                        "value": "m_flow_nominal"
+                    }
+                ],
+                "conditionalClause": " if inputType==Buildings.Fluid.Types.InputType.Continuous"
+            }
+        ]
+    }
+}

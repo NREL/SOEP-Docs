@@ -1,0 +1,9 @@
+venv/
+venv3/
+*.pyc
+libs/
+temp/
+__pycache__/
+*.json
+master/
+v4.0.0/
