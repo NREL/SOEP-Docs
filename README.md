@@ -31,3 +31,7 @@ and placement into the `UsageExample` project.
 
 Detailed information on 3rd party code dependencies can be found in each
 library.
+
+# License
+
+See `LICENSE.txt` at the top level of this repository.
