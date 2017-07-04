@@ -45,12 +45,18 @@ public class SrcAstAnnotations
         if (ast == null)
             return;
         Map<String,String> ans = new HashMap<>();
-        addAnnotationIfPresent(ans, ast.annotation("Dialog"), "dialog");
-        addAnnotationIfPresent(ans, ast.annotation("Placement"), "placement");
-        addAnnotationIfPresent(ans, ast.annotation("Documentation/info"), "documentationInfo");
-        addAnnotationIfPresent(ans, ast.annotation("Icon"), "icon");
-        addAnnotationIfPresent(ans, ast.annotation("Diagram"), "diagram");
-        //addAnnotationIfPresent(ans, ast.annotation(), "all");
+        if (false)
+        {
+            addAnnotationIfPresent(ans, ast.annotation("Dialog"), "dialog");
+            addAnnotationIfPresent(ans, ast.annotation("Placement"), "placement");
+            addAnnotationIfPresent(ans, ast.annotation("Documentation/info"), "documentationInfo");
+            addAnnotationIfPresent(ans, ast.annotation("Icon"), "icon");
+            addAnnotationIfPresent(ans, ast.annotation("Diagram"), "diagram");
+        }
+        else
+        {
+            addAnnotationIfPresent(ans, ast.annotation(), "all");
+        }
         if (ans.size() > 0)
             annotations = ans;
     }
@@ -60,7 +66,16 @@ public class SrcAstAnnotations
             return;
         if (an == AnnotationNode.NO_ANNOTATION)
             return;
-        if (an.toString().equals("(no annotation)"))
+        String s;
+        try
+        {
+            s = an.toString();
+        }
+        catch (ClassCastException e)
+        {
+            return;
+        }
+        if (s.equals("(no annotation)"))
             return;
         m.put(key, an.toString());
     }
