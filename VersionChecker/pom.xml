@@ -57,13 +57,6 @@
     </plugins>
   </build>
 
-  <licenses>
-    <license>
-      <name>BSD3</name>
-      <url>https://opensource.org/licenses/BSD-3-Clause</url>
-    </license>
-  </licenses>
-
   <dependencies>
     <dependency>
       <groupId>com.google.code.gson</groupId>
