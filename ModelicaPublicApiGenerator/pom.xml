@@ -53,12 +53,6 @@
       </plugin>
     </plugins>
   </build>
-  <licenses>
-    <license>
-      <name>BSD3</name>
-      <url>https://opensource.org/licenses/BSD-3-Clause</url>
-    </license>
-  </licenses>
   <repositories>
     <repository>
       <id>central</id>
